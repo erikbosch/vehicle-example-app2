@@ -69,7 +69,6 @@
 |actions/upload-artifact|v4|MIT License|
 |aquasecurity/trivy-action|0.19.0|Apache License 2.0|
 |ASzc/change-string-case-action|v6|ISC License|
-|battila7/get-version-action|v2|MIT License|
 |dawidd6/action-download-artifact|v3|MIT License|
 |de-vri-es/setup-git-credentials|v2|BSD 2-Clause "Simplified" License|
 |devcontainers/ci|v0.3|MIT License|
