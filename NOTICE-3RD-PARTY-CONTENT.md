@@ -83,5 +83,5 @@
 |mikepenz/action-junit-report|v4|Apache License 2.0|
 |peaceiris/actions-gh-pages|v3|MIT License|
 |peaceiris/actions-hugo|v2|MIT License|
-|pre-commit/action|v3.0.0|MIT License|
+|pre-commit/action|v3.0.1|MIT License|
 |softprops/action-gh-release|v2|MIT License|
