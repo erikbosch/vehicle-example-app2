@@ -100,7 +100,7 @@ jobs:
         env:
           VAPP_IMAGE: ${{ env.APP_NAME }}-multiarch-oci-archive/${{ env.APP_NAME }}-oci-multiarch.tar
           VAPP_NAME: ${{ env.APP_NAME }}
-          VAPP_VERSION: ${{env.VERSION}}
+          VAPP_VERSION: ${{ env.VERSION }}
           REGISTRY: "ghcr.io/${{steps.github-repository-name-case-adjusted.outputs.lowercase}}"
         run: |
           tag=$(echo docker://$REGISTRY/$VAPP_NAME:$VAPP_VERSION | tr '[:upper:]' '[:lower:]')
@@ -129,12 +129,15 @@ jobs:
       - name: Clone Release Documentation Action repository
         uses: actions/checkout@v4
         with:
-          repository: eclipse-velocitas/release-documentation-action
+          # temporary
+          #repository: eclipse-velocitas/release-documentation-action
+          repository: SoftwareDefinedVehicle/release-documentation-action
+          ref: erik_dep
           path: "./.github/actions"
 
       - uses: actions/setup-node@v4
         with:
-          node-version: "18"
+          node-version: "20"
           check-latest: true
 
       - name: Conditional input event value
